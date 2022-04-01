@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 
-function withLalout(Component) {
+function withLayout(Component) {
 
 function Layout(){
 
@@ -30,4 +30,4 @@ function Layout(){
   return Layout
 }
 
-export default withLalout
+export default withLayout

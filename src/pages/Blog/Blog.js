@@ -1,5 +1,5 @@
 import React from 'react'
-import withLalout from './withLalout'
+import withLayout from './withLayout'
 
 function Blog() {
   return (
@@ -21,4 +21,4 @@ function Blog() {
   )
 }
 
-export default withLalout (Blog)
+export default withLayout(Blog)

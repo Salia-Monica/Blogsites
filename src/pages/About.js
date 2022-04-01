@@ -1,5 +1,5 @@
 import React from 'react'
-import withLayout from './withLalout'
+import withLayout from './withLayout'
 
 function About () {
   return (
