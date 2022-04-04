@@ -1,22 +1,24 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import withLayout from './withLayout'
 
 function Home () {
+  const navigate = useNavigate()
   return (
-    <div>
-    <h1>welcome to my HomePage</h1>
-    <div>
-    <p>Top seed Daniil Medvedev moved a step closer to reclaiming the world number one 
-    ranking as he beat Spaniard Pedro Martinez 6-3 6-4 on Monday to reach the last  </p>
+   <div>
+   <div className='banner'>
+   <h1>welcome to my webpage</h1>
+   <p>my first webpage was a fantastic work and eveyone was
+    happy to have acceses to import PropTypes from 'prop-types'</p>
+    <div className='action-wrap'>
+    <button className='btn-outline' onClick={()=>navigate("./about")}> About Me </button>
+    <button className='btn-contain' onClick={()=>navigate("./blog")}> Read Blog </button>
 
-    <p>Top seed Daniil Medvedev moved a step closer to reclaiming the world number one ranking as he beat 
-    Spaniard Pedro Martinez 6-3 6-4 on Monday to reach the last  </p>
+    </div>
 
-    <p> Top seed Daniil Medvedev moved a step closer to reclaiming the world number one ranking as he beat
-     Spaniard Pedro Martinez 6-3 6-4 on  Monday to reach the last </p>
-    </div>
-    </div>
-    
+   </div>
+
+   </div>
   )
 }
 
